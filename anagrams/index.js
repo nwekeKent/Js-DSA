@@ -8,7 +8,12 @@
 //   anagrams('Heart!', 'EARTH') --> True
 //   anagrams('lol', 'lolc') --> False
 
-function anagrams(stringA, stringB) {}
+function anagrams(stringA, stringB) {
+  let str1 = stringA.toLowerCase().replace(/[^a-z\d]/g, '').split('').sort().join('')
+  let str2 = stringB.toLowerCase().replace(/[^a-z\d]/g, '').split('').sort().join('')
+
+  return str1 === str2
+}
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \

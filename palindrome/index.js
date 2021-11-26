@@ -5,7 +5,10 @@
 //   palindrome("Madam") === true
 //   palindrome("love") === false
 
-function palindrome(str) {}
+function palindrome(str) {
+let lowerCaseStr = str.toLowerCase()
+  return lowerCaseStr === lowerCaseStr.split("").reverse().join("");
+}
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
